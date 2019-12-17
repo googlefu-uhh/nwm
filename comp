@@ -1,0 +1,7 @@
+.PHONY: all compile write
+
+all: compile write
+
+write: ./file.out
+
+compile: g++ file.cpp -o file.out
